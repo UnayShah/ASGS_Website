@@ -10,4 +10,14 @@
 ```npm run dev```
 5.  Open local URL:<br>
 ```http://localhost:3000```
-6.  The project is also deployed on Vercel: ```http://asgs-website.vercel.app/```
+6.  The project is also deployed on Vercel: ```http://asgs-website.vercel.app/```<br>
+
+Alternatively, run this script:<br>
+(Tested on Windows)
+```
+git@github.com:UnayShah/ASGS_Website.git
+cd ASGS_website
+npm i
+npm run dev
+explorer http://localhost:3000
+```
