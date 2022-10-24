@@ -13,18 +13,21 @@ const ImageShowcase = () => {
                 <div className="grid grid-cols-1 md:grid-cols-3">
                     <div className="relative px-4 md:w-full md:max-w-full w-full p-0">
                         <Image
+                            alt="High Sierra"
                             src={img1}
                             className="scale-75 hover:scale-[0.8] md:scale-100 md:hover:scale-105 ease-in duration-100"
                             layout="responsive" />
                     </div>
                     <div className="relative px-4 md:w-full md:max-w-full w-full p-0 md:pt-24">
                         <Image
+                            alt="Yosemite"
                             src={img2}
                             className="scale-75 hover:scale-[0.8] md:scale-100 md:hover:scale-105 ease-in duration-100"
                             layout="responsive" />
                     </div>
                     <div className="relative px-4 md:w-full md:max-w-full w-full p-0 md:pt-48">
                         <Image
+                            alt="Mojave"
                             src={img3}
                             className="scale-75 hover:scale-[0.8] md:scale-100 md:hover:scale-105 ease-in duration-100"
                             layout="responsive" />
@@ -38,6 +41,7 @@ const ImageShowcase = () => {
             <div className="flex flex-col md:hidden md:max-w-[1240px]">
                 <div className="relative px-4 md:w-full md:max-w-full w-full py-0">
                     <Image
+                        alt="High Sierra"
                         src={img1}
                         className="scale-75 hover:scale-[0.8] md:scale-100 md:hover:scale-105 ease-in duration-100"
                         layout="responsive" />
@@ -53,6 +57,7 @@ const ImageShowcase = () => {
 
                 <div className="relative px-4 md:w-full md:max-w-full w-full p-0">
                     <Image
+                        alt="Yosemite"
                         src={img2}
                         className="scale-75 hover:scale-[0.8] md:scale-100 md:hover:scale-105 ease-in duration-100"
                         layout="responsive" />
@@ -68,6 +73,7 @@ const ImageShowcase = () => {
 
                 <div className="relative px-4 md:w-full md:max-w-full w-full p-0">
                     <Image
+                        alt="Mojave"
                         src={img3}
                         className="scale-75 hover:scale-[0.8] md:scale-100 md:hover:scale-105 ease-in duration-100"
                         layout="responsive" />
@@ -83,6 +89,7 @@ const ImageShowcase = () => {
 
                 <div className="relative px-4 md:w-full md:max-w-full w-full pt-8">
                     <Image
+                        alt="El Capitan"
                         src={img0}
                         className="scale-75 hover:scale-[0.8] md:scale-100 md:hover:scale-105 ease-in duration-100"
                         layout="responsive" />
