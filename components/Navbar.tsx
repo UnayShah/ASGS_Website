@@ -5,17 +5,18 @@ import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
 
 const Navbar = () => {
     const [menu, setMenu] = useState(false);
-    const [barColor, setBarColor] = useState('transparent');
+    const [barColor, setBarColor] = useState('#0F0F0F20');
+    const [blurBackground, setBlurBackground] = useState('true');
     const [barTextColor, setBarTextColor] = useState('white');
 
     const handleMenu = () => setMenu(!menu);
     useEffect(() => {
         const changeColor = () => {
             if (window.scrollY >= 120) {
-                setBarColor('white');
+                setBarColor('#0F0F0F20');
                 setBarTextColor('black')
             } else {
-                setBarColor('transparent');
+                setBarColor('#0F0F0F20');
                 setBarTextColor('white');
             }
         };
@@ -24,7 +25,7 @@ const Navbar = () => {
 
     return (
         <div style={{ backgroundColor: barColor }}
-            className="fixed top-0 left-0 w-full z-10 ease-in duration-100">
+            className="fixed top-0 left-0 w-full z-10 ease-in duration-100 backdrop-blur-sm shadow-[#0F0F0F55] shadow-sm">
             <div style={{ color: barTextColor }}
                 className="max-w-[1240px] m-auto flex justify-between items-center p-4 text-white ease-in duration-100">
                 {/* Webpage title */}
